@@ -49,9 +49,9 @@ def main():
                         if "Invalid password for user" not in response2.text:
                             with open("exist.log", "a") as exist_file:
                                 exist_file.write(password + "\n")
-                            print("Captcha solved correctly. User exists.")
+                            print("Captcha solved correctly. Password is correct.")
                         else:
-                            print("Captcha solved correctly. User does not exist or password is incorrect.")
+                            print("Captcha solved correctly. Password is incorrect.")
                     else:
                         print("Error: Invalid captcha")
 
